@@ -8,9 +8,9 @@
     Formulare
 </h1>
 
-<form method="post">
+<form method="post" class="form-group">
     <label>meno</label>
-    <input type="text" name="meno">
+    <input class="form-control" type="text" name="meno">
     <br>
     <label>Priezvisko</label>
     <input type="text" name="priezvisko">
