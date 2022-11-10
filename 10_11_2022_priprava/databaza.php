@@ -1,3 +1,7 @@
+<?php
+    $conn = "";
+    include_once "confs/db_config.php";
+?>
 <h1>Databaza</h1>
 <h3>Ako sa k nej dostat</h3>
 <ul>
@@ -7,8 +11,7 @@
 <img src="../assets/img/databaza.png">
 
 <?php
-$conn = "";
-include_once "confs/db_config.php";
+
 
 echo "<h3>Pripojenie databazy</h3>";
 if(!$conn)
