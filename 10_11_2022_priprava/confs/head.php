@@ -10,12 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
     <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <h1 class="display-4 text-center">Stredoskolska prax</h1>
+    
     
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,6 +32,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../forms.php">Formular</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../vypis.php">Vypis</a>
       </li>
     </ul>
   </div>
