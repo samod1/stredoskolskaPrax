@@ -31,6 +31,14 @@
                 }
             ?>
         </select>
+        <div class="row">
+            <div class="col-6">
+                <input type="reset">
+            </div>
+            <div class="col-6">
+                
+            </div>
+        </div>
 
         </form>
         <?php
