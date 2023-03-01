@@ -17,6 +17,7 @@ if($numRows != 0)
             <th scope="col">id</th>
             <th scope="col">meno</th>
             <th scope="col">priezvisko</th>
+            <th colspan="2">Akcia</th>
         </tr>
       
     <?php
