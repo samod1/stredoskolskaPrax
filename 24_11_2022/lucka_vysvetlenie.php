@@ -1,5 +1,6 @@
 <?php
-
+$conn="";
+include "confs/db_conf.php";
 //vytvorenie zaznamu v DB
 
 //udaje z formularu
@@ -10,6 +11,24 @@
 
 <input type="text" name="meno" placeholder="Sem vyplnte vase ctene meno">
 <input type ="text" name="priezvisko" placeholder="Sem vyplnte vase priezvisko">
+<select name="obec">
+    <?php
+
+        $query="SELECT kód , názov  FROM stredoskolskaprax.enum_obce eo WHERE `kód krajiny` = 703";
+        $result = mysqli_query($conn,$query);
+
+        while($row = mysqli_fetch_assoc($result))
+        {
+
+        
+    
+    ?>
+    <option value="<?php echo $row["kód"]?>"><?php echo $row["názov"]?></option>
+
+    <?php
+    }
+    ?>
+</select>
 
 <input type="submit" name="potvrdenie">
 </form>
@@ -27,4 +46,6 @@
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
     }
+
+    
 ?>
